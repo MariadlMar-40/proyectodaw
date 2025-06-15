@@ -1,0 +1,41 @@
+/* Estilo general del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a; /* Azul oscuro */
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+/* Grupo de enlaces */
+.navbar .links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Estilo de los enlaces */
+.navbar a {
+  color: #e0f2fe; /* Azul muy claro */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #60a5fa; /* Azul intermedio */
+}
+
+/* Botón de cerrar sesión */
+.navbar button {
+  background: none;
+  border: none;
+  color: #93c5fd; /* Azul suave */
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navbar button:hover {
+  color: #3b82f6; /* Azul más fuerte */
+}

@@ -1,0 +1,31 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno
+.env
+
+# Logs
+logs/
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor de código
+.vscode/
+.idea/
+
+# Salida de producción (si se usa algún build)
+dist/
+build/
+
+# Despliegue en Vercel
+.vercel/
+
+# Archivos temporales
+*.tmp
+*.swp

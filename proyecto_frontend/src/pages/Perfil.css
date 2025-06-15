@@ -1,0 +1,41 @@
+div {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f8fafc; /* blanco azulado */
+  border: 1px solid #cbd5e1; /* borde azul grisáceo */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(30, 64, 175, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #1e3a8a; /* azul oscuro */
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: #334155; /* azul grisáceo */
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
+strong {
+  color: #1e40af; /* azul más fuerte para resaltar datos */
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2563eb; /* azul principal */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e3a8a; /* azul más oscuro */
+}
