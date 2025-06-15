@@ -26,8 +26,8 @@
 ## ⚙️ Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/freesport.git
-cd frontend
+git clone https://github.com/MariadlMar-40/proyectodaw.git
+cd ./proyecto_frontend
 npm install
 ```
 

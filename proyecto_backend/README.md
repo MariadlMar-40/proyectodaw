@@ -36,8 +36,7 @@ Este es el backend de **FreeSport**, una aplicación web para compartir y gestio
 ### 1. Clona el proyecto y entra al backend
 
 ```bash
-git clone https://github.com/tu-usuario/proyecto-freesport.git
-cd proyecto-freesport/backend
+cd ./proyecto_backend
 ```
 
 ### 2. Instala las dependencias
