@@ -37,9 +37,7 @@ exports.crearUsuario = async (req, res, next) => {
     }
     
     const { data, error } = await userModel.crearUsuario({ email, contraseña });
-    console.log(data);
-    // console.log(data);
-
+    
     if (error) {
       console.error("❌ Error al crear usuario:", error);
       return res.status(400).json({ error: "Error al crear usuario" });

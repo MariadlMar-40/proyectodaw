@@ -11,13 +11,10 @@ const requireAuth = require('../middlewares/requireAuth');
 
 router.post('/login', async (req, res) => {
   try {
-    console.log('📥 Datos recibidos:', req.body);
-
+   
     const { email, contraseña } = req.body;
 
     const { data, error } = await require('../models/userModel').encontrarUsuarioLogin({ email, contraseña });
-
-    console.log('📤 Resultado Supabase:', { data, error });
 
     if (error || !data) {
       return res.status(400).json({ error: 'Credenciales incorrectas' });

@@ -10,7 +10,7 @@ exports.crearEjercicio = async (req, res) => {
     duracion: req.body.duracion,
     imagen_url: req.body.imagen,
   };
-  console.log(ejercicio);
+  
   const { data, error } = await ejercicioModel.crearEjercicio(ejercicio);
   if (error) return res.status(400).json({ error });
   res.status(201).json({ ejercicio: data });
