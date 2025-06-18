@@ -18,7 +18,7 @@ function AgregarEjercicio({ onAdd }) {
   };
 
   const handleSubmit = (e) => {
-    console.log("esta llegando")
+   
     e.preventDefault();
 
     // Filtrar campos vacíos y convertir numéricos

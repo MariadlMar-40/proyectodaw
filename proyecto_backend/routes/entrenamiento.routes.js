@@ -23,6 +23,9 @@ router.get('/publicos', entrenamientoController.listarEntrenamientosPublicos);
 router.put('/:id', requireAuth, entrenamientoController.actualizarEntrenamiento);
 router.delete('/:id', requireAuth, entrenamientoController.eliminarEntrenamiento);
 
+router.get('/:id/ejercicios', requireAuth, entrenamientoController.obtenerEjerciciosDeEntrenamiento);
+router.get('/:id/ejerciciospublicos', entrenamientoController.obtenerEjerciciosDeEntrenamiento);
+
 
 module.exports = router;
 

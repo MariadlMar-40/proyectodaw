@@ -89,3 +89,33 @@ exports.obtenerEntrenamientosDeUsuario = async (userId) => {
 };
 
 
+exports.obtenerEjerciciosPorEntrenamiento = async (entrenamientoId) => {
+
+  const { data, error } = await supabase
+    .from('entrenamiento_ejercicio')
+    .select(`
+      ejercicios (
+        id,
+        nombre,
+        descripcion,
+        tipo,
+        grupo_muscular,
+        duracion
+      ),
+      series,
+      repeticiones,
+      tiempo
+    `)
+    .eq('entrenamiento_id', entrenamientoId);
+      
+  if (error) return { data: null, error };
+
+  const ejercicios = data.map((rel) => ({
+    ...rel.ejercicios,
+    series: rel.series,
+    repeticiones: rel.repeticiones,
+    tiempo: rel.tiempo,
+  }));
+
+  return { data: ejercicios, error: null };
+}; 

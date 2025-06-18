@@ -46,3 +46,24 @@ p {
 small {
   color: #64748b; /* gris azulado más claro */
 }
+
+.busqueda-input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.lista-entrenamientos {
+  list-style: none;
+  padding: 0;
+}
+
+.entrenamiento-item {
+  margin-bottom: 1.5rem;
+}
+
+.lista-ejercicios {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}

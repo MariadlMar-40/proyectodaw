@@ -30,8 +30,7 @@ exports.postLogin = async (req, res, next) => {
   try {
 
     const { email, password } = req.body;
-    console.log(email, password );
-
+   
     // Busca el usuario
     const usuario = await userModel.buscarPorEmail(email);
     if (!usuario || usuario.contraseña !== password) {

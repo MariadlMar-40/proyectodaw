@@ -37,7 +37,7 @@ exports.obtenerUsuarioPorId = async (id) => {
 
 // Buscar usuario por email y contraseña
 exports.encontrarUsuarioLogin = async ({ email, contraseña }) => {
-  console.log(email,contraseña);
+  
   const { data, error } = await supabase
     .from("usuarios")
     .select("*")
